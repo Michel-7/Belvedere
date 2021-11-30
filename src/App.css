@@ -1,38 +1,320 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Montserrat', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home{
+  background-color:rgb(222, 224, 223) ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  height:40px;
+  width: 100%;
+  background-color:rgb(202, 204, 203);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lg{
+  margin-top: 24px;
+  margin-left: 10px;
+}
+.lg img{
+  width:180px;
+  height:60px;
+}
+.logo{
+ text-align: center;
+ 
+}
+.links{
+  width:100%; 
+}
+.links ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: -250px;
+}
+.links ul li{
+  font-size: 20px;
+  margin-right: 25px;
+}
+.links ul li a{
+  text-decoration: none;
+  color:#000000;
+}
+.links ul li a:hover{
+  color:red;
+}
+.vodka-icon{
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.vodka-icon img{
+  height: 550px;
+}
+.title{
+  text-align: center;
+  height:500px;
+  width:600px;
+  background-color:black;
+  color: whitesmoke;
+  cursor:pointer; 
+  margin-top: -50px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+ p{
+  font-size: 50px;
+  
+}
+.title:hover{
+  background-color:rgb(59, 58, 58);
+}
+.explore{
+  font-size: 22px;
+}
+.main{
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow{
+  margin-left: 8px;
+  height:40px;
+  width:30px;
+}
+.row-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top: 100px;
+ margin-right: 50px;
+}
+.b-title{
+  margin-top: 50px;
+  font-size:40px;
+  text-align: center;
+  font-weight: 800;
+}
+.about-b{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.title-2{
+  text-align: center;
+  height:500px;
+  width:600px;
+  background-color:rgb(161, 32, 32);
+  color: whitesmoke;
+  cursor:pointer;
+  margin-top: -50px;
+}
+.title-2:hover{
+  background-color:rgb(186, 80, 80);;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+}
+.footer{
+  width:100%;
+}
+.footer ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.footer ul li{
+  cursor:pointer;
+  font-weight: 800;
+}
+.history{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(222, 224, 223) ;
+}
+.about-img img{
+  height:600px;
+}
+.about{
+  margin-left: 100px;
+  width: 350px;
+}
+.about p{
+  font-size: 30px;
+}
+.cocktails{
+  position: absolute;
+  top:100px;
+  height: 100vh;
+  width:100%;
+}
+.c-title{
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.cocktail{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.cocktail img{
+  width:400px;
+  height: 400px;
+}
+.items{
+  margin-top: 100px;
+  display: grid;
+  justify-content:center;
+  grid-template-columns: auto auto;
+}
+@media (max-width:600px){
+  .navbar{
+    justify-content: center;
+  }
+  .lg img{
+    width:90px;
+    height:55px;
+  }
+  .lg{
+    margin-top: 24px;
+    margin-left: 8px;
+  } 
+  .links{
+   width:100%;
+  } 
+  .links ul{
+    margin-left: -60px;
+  }
+  .links ul li{
+    font-size: 15px;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .title{
+    height:350px;
+    width:300px;
+    margin-top: -40px;
+  }
+  .title-2{
+    height:350px;
+    width:300px;
+    
+  }
+  p{
+    font-size: 35px;
+  }
+  .explore{
+    font-size: 16px;
+  }
+  .arrow{
+    height:30px;
+    width:20px;
+  }
+  
+  .logo{
+    display:none;
+  }   
+  .footer{
+    width:100%;
+  }
+  .footer ul{
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  .footer ul li{
+    margin-right: 5px;
+    font-size: 10px;
+    cursor:pointer;
+    font-weight: 900;
+  }
+  .history{
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(222, 224, 223) ;
+  }
+  .about-img{
+    margin-top:-100px;
+  }
+  .about-img img{
+    height:450px;
+  }
+  .about{
+    margin-left: 0px;
+  }
+  .about p{
+    font-size: 18px;
+  }
+  .cocktail img{
+    width:300px;
+    height: 300px;
+  }
+  .items{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+  }
+  .cocktail{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .vodka-icon{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .vodka-icon img{
+    height: 350px;
+  }
+  .row-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin-top: 100px;
+   margin-right: 50px;
+  }
+  .b-title{
+    margin-top: 45px;
+    font-size:40px;
+    text-align: center;
+    font-weight: 800;
+  }
+  .about-b{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
