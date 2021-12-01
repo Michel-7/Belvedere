@@ -173,6 +173,10 @@
   flex-direction: column;
   margin-right: 50px;
   margin-bottom: 20px;
+  transition: 1.2s ease;
+}
+.cocktail:hover{
+  transform:translateY(-5%);
 }
 .cocktail img{
   width:400px;
@@ -183,6 +187,54 @@
   display: grid;
   justify-content:center;
   grid-template-columns: auto auto;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.d-name{
+  font-size: 35px;
+  font-weight: 800;
+  z-index: 100;
+  color: black;
+
+}
+.desc-img img{
+  height:500px;
+  margin-top: 80px;
+}
+.description p{
+  text-align: center;
+  font-size: 25px;
+  width:400px;
+}
+.how-to h2{
+  text-align: center;
+  color: red;
+
+}
+.how-to p{
+  /* border-left: 1px solid red;
+  border-right:  1px solid red; */
+  padding:10px;
+  margin-top: -10px;
+}
+.btn{
+  height:30px;
+  padding-top: 4px;
+  width: 300px;
+  text-align: center;
+  font-size: 22px;
+  background-color: red;
+  color: whitesmoke;
+  border:1px solid;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: black;
 }
 @media (max-width:600px){
   .navbar{
@@ -312,8 +364,25 @@
   }
   .about-b{
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
+  }
+  .d-name{
+    font-size: 25px;
+    font-weight: 800;
+    z-index: 100;
+    color: black;
+  
+  }
+  .desc-img img{
+    width: 350px;
+    height:350px;
+    margin-top: 80px;
+  }
+  .description p{
+    text-align: center;
+    font-size: 16px;
+    width:300px;
   }
 
 }
